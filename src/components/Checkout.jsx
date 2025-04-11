@@ -9,9 +9,9 @@ import {
   FormLabel,
   FormControl,
   FormMessage,
-} from "./ui/form"; // Updated to ./ui/form
-import { Input } from "./ui/input"; // Updated to ./ui/input
-import { Button } from "./ui/button"; // Updated to ./ui/button
+} from "./ui/form";
+import { Input } from "./ui/input";
+import { Button } from "./ui/button";
 import { useForm } from "react-hook-form";
 
 const Checkout = () => {

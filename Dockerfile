@@ -7,7 +7,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-# Use official Nginx image to serve the app
+
 
 
 EXPOSE 4173

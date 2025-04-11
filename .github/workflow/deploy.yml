@@ -22,7 +22,7 @@ jobs:
       - name: Authenticate to Google Cloud
         uses: google-github-actions/auth@v2
         with:
-          credentials_json: ${{ secrets.GCLOUD_SERVICE_KEY }}
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
 
       # Set up Google Cloud SDK
       - name: Set up Google Cloud SDK
@@ -37,8 +37,8 @@ jobs:
       # Build and push Docker image
       - name: Build and push Docker image
         run: |
-          docker build -t ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/${{ secrets.REPOSITORY }}/ecommerce-app:${{ github.sha }} .
-          docker push ${{ secrets.REGION }}-docker.pkg.dev/${{ secrets.PROJECT_ID }}/${{ secrets.REPOSITORY }}/ecommerce-app:${{ github.sha }}
+          docker build -t gcr.io/e-commerce-app-456404/reactbuilds/ecommercereact .
+          docker push gcr.io/e-commerce-app-456404/reactbuilds/ecommercereact
 
       # Deploy to Cloud Run
       - name: Deploy to Cloud Run
