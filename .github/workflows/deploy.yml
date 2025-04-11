@@ -48,7 +48,5 @@ jobs:
             --platform managed \
             --region ${{ secrets.REGION }} \
             --port 8080 \
-             
-            
             --allow-unauthenticated \
             --quiet
