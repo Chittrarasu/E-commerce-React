@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Home from "./pages/Home";
+import Home from "./pages/Home"; // Adjusted to match your structure
 import Login from "./components/Login";
 import Checkout from "./components/Checkout";
 import { AuthProvider, useAuth } from "./context/AuthContext";
